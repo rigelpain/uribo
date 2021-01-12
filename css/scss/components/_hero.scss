@@ -1,0 +1,41 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/hero.png) center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .logo-wrapper {
+    width: 60%;
+    .logo {
+      width: 100%;
+    }
+  }
+  &-article {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .txt {
+      color: $white;
+      font-size: 1.6rem;
+      letter-spacing: 8px;
+      &:nth-child(n+2) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .button-wrapper {
+    margin-top: 150px;
+    .invest-button {
+      color: $white;
+      height: 40px;
+      padding: 5px 20px;
+      border: 1px solid $white;
+      border-radius: 5px;
+    }
+  }
+}

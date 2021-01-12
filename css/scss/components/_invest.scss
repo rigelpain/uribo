@@ -1,0 +1,120 @@
+.invest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  &-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+  .support-amount {
+    .value {
+      margin-top: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .unit {
+      margin-left: 5px;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+  &-meter {
+    margin-top: 5px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid $black;
+    border-radius: 10px;
+    &-bar {
+      width: 87.9%;
+      height: 100%;
+      background-color: $color-sub;
+      border-radius: 10px;
+      .value {
+        color: $black;
+        text-align: right;
+        font-weight: bold;
+        margin-right: 10px;
+        line-height: 18px;
+      }
+    }
+  }
+  &-parameters {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .parameter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      .value {
+        font-size: 1.6rem;
+        font-weight: bold;
+        .unit {
+          margin-left: 3px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .button-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    .invest-button {
+      width: 100%;
+      color: $white;
+      background-color: $color-1;
+      height: 40px;
+      padding: 5px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 1px 2px $black;
+    }
+    .share-list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 8px;
+      flex-wrap: wrap;
+      li {
+        width: calc( ( 100% / 3 ) - 5px );
+        height: 20px;
+        &:nth-of-type(n+2) {
+          margin-left: 5px;
+        }
+        button {
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+          font-size: 1rem;
+        }
+        .share {
+          &-url {
+            background-color: $gray;
+          }
+          &-insta {
+            background-color: $insta;
+          }
+          &-pin {
+            background-color: $pin;
+          }
+          &-fb {
+            background-color: $fb;
+            color: $white;
+          }
+          &-twitter {
+            background-color: $twitter;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.concept {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-wrapper {
+    // margin-top: 20px;
+  }
+  &-img {
+
+  }
+  &-article {
+    margin-top: 40px;
+    .sentence {
+      &:nth-child(n+2) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
