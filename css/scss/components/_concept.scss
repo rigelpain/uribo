@@ -7,11 +7,17 @@
     // margin-top: 20px;
   }
   &-img {
-
+    width: 100%;
+    height: 250px;
+    background-image: url("https://placehold.jp/20/ccc/999/425x200.png?text=concept-image");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   &-article {
     margin-top: 40px;
-    .sentence {
+    &__txt {
+      font-size: 1.4rem;
       &:nth-child(n+2) {
         margin-top: 20px;
       }

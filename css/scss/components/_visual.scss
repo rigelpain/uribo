@@ -1,5 +1,42 @@
 .visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &-wrapper {
-    margin-top: 40px;
+    margin-top: $section-margin;
+    padding: 0 40px;
   }
+  &-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    &:nth-child(n+2) {
+      margin-left: 25px;
+    }
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__image {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &__name {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    &__article {
+      margin-top: 10px;
+    }
+  }
+  
 }

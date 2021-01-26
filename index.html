@@ -1,215 +1,305 @@
 <!DOCTYPE html>
+<!-- developed by Haruaki Kobayashi -->
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Varela+Round&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>URIBO</title>
   </head>
 
   <body>
-    <section class="header-wrapper">
-      <header>
-        <div class="logo"></div>
-        <div class="button-wrapper">
-          <button class="invest-button">プロジェクトを支援する</button>
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="header__logo"></div>
+        <div class="invest-button--clear-wrapper">
+          <button class="invest-button--clear">プロジェクトを支援する</button>
         </div>
       </header>
-    </section>
-
+    </div>
+    
     <main>
-      <section class="hero-wrapper">
-        <section class="hero">
-          <div class="logo-wrapper">
-            <img class="logo" src="../img/uribo-logo.png">
-          </div>
-          <div class="hero-article">
-            <div class="txt">運ぶ箱と</div>
-            <div class="txt">生活を整える</div>
-          </div>
-          <div class="button-wrapper">
-            <button class="invest-button">プロジェクトを支援する</button>
-          </div>
-        </section>
+      <section class="section --1">
+        <div class="hero-wrapper">
+          <section class="hero">
+            <div class="hero__logo-wrapper">
+              <img class="hero__logo" src="./img/uribo-logo.png">
+            </div>
+            <div class="hero-article">
+              <div class="hero-article__txt">運ぶ箱と</div>
+              <div class="hero-article__txt">整える生活</div>
+            </div>
+            <div class="invest-button--clear-wrapper">
+              <button class="invest-button--clear">プロジェクトを支援する</button>
+            </div>
+          </section>
+        </div>
       </section>
+      <section class="section --2">
+        <div class="concept-wrapper">
+          <section class="concept">
+            <div class="concept-img"></div>
+            <div class="concept-article">
+              <p class="concept-article__txt">
+                頭でわかっていても<br>
+                体がなかなか動いてくれない...
+              </p>
+              <p class="concept-article__txt">
+                ゲームや趣味に夢中になって<br>
+                家事や睡眠を後回しにしがちなあなた
+              </p>
+              <p class="concept-article__txt">
+                ウリボたちと暮らすだけで<br>
+                「めんどくさがり」が少しづつ治っていきます
+              </p>
+            </div>
+          </section>
+        </div>
 
-      <section class="concept-wrapper">
-        <section class="concept">
-          <img class="concept-img" src="https://placehold.jp/375x200.png?text=concept-image">
-          <div class="concept-article">
-            <p class="sentence">
-              頭でわかっていても<br>
-              体がなかなか動いてくれない...
-            </p>
-            <p class="sentence">
-              ゲームや趣味に夢中になって<br>
-              家事や睡眠を後回しにしがちなあなた
-            </p>
-            <p class="sentence">
-              ウリボたちと暮らすだけで<br>
-              「めんどくさがり」が少しづつ治っていきます
-            </p>
-          </div>
-        </section>
-      </section>
-
-      <section class="invest-wrapper">
-        <section class="invest">
-          <div class="support-amount">
-            <p class="txt">現在の支援額</p>
-            <p class="value">2,637,160<span class="unit">円</span></p>
-          </div>
-          <div class="invest-meter">
-            <div class="invest-meter-bar">
-              <p class="value">87.9%</p>
+        <div class="invest-wrapper">
+          <section class="invest">
+            <div class="invest-now">
+              <p class="invest-now__txt">現在の支援額</p>
+              <p class="invest-now__value">2,637,160<span class="unit">円</span></p>
             </div>
-          </div>
-          <div class="invest-parameters">
-            <div class="parameter">
-              <p class="txt">支援者数</p>
-              <p class="value">8,942<span class="unit">人</span></p>
+            <div class="invest-meter">
+              <div class="invest-meter__bar">
+                <p class="invest-meter__value">87.9%</p>
+              </div>
             </div>
-            <div class="parameter">
-              <p class="txt">募集終了まで</p>
-              <p class="value">5<span class="unit">日</span></p>
+            <div class="invest-parameter-wrapper">
+              <div class="invest-parameter">
+                <p class="invest-parameter__txt --person">支援者数</p>
+                <p class="invest-parameter__value">8,942<span class="invest-parameter__value-unit">人</span></p>
+              </div>
+              <div class="invest-parameter">
+                <p class="invest-parameter__txt --clock">募集終了まで</p>
+                <p class="invest-parameter__value">5<span class="invest-parameter__value-unit">日</span></p>
+              </div>
+              <div class="invest-parameter">
+                <p class="invest-parameter__txt --flag">目標金額</p>
+                <p class="invest-parameter__value">3,000,000<span class="invest-parameter__value-unit">円</span></p>
+              </div>
             </div>
-            <div class="parameter">
-              <p class="txt">目標金額</p>
-              <p class="value">3,000,000<span class="unit">円</span></p>
+            <div class="invest-button-wrapper">
+              <button class="invest-button">プロジェクトを支援する</button>
+              <ul class="invest-button__share-list">
+                <li><button class="invest-button__share --fb"></button></li>
+                <li><button class="invest-button__share --twitter"></button></li>
+                <li><button class="invest-button__share --insta"></button></li>
+                <li><button class="invest-button__share --url"></button></li>
+              </ul>
             </div>
-          </div>
-          <div class="button-wrapper">
-            <button class="invest-button">プロジェクトを支援する</button>
-            <ul class="share-list">
-              <!-- <li><button class="share-pin">シェア</button></li> -->
-              <li><button class="share-fb">シェア</button></li>
-              <li><button class="share-twitter">ツイート</button></li>
-              <li><button class="share-url">URLコピー</button></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-      
-      <section class="visual-wrapper">
-        <section class="visual">
-          <h1>URIBO</h1>
-        </section>
-      </section>
-
-      <section class="usage-wrapper">
-        <section class="usage">
-          <img class="usage-img"/>
-          <img class="usage-img"/>
-          <img class="usage-img"/>
-          <img class="usage-img"/>
-          <img class="usage-img"/>
-        </section>
-        <div class="button-wrapper">
-          <button class="invest-button">プロジェクトを支援する</button>
-          <ul>
-            <li><button class="share-url">URLコピー</button></li>
-            <li><button class="share-insta">シェア</button></li>
-            <li><button class="share-facebook">シェア</button></li>
-            <li><button class="share-twitter">ツイート</button></li>
-          </ul>
+          </section>
         </div>
       </section>
 
-      <section class="tech-wrapper">
-        <section class="tech">
-          <h1>TECHNOLOGY</h1>
-          <div class="tech-items">
-            <div class="item">
-              <img class="item-img">
-              <p class="item-txt"></p>
+      <section class="section --3">
+        <div class="visual-wrapper">
+          <section class="visual">
+            <h1 class="section-title">URIBO</h1>
+            <div class="visual-description-container">
+              <div class="visual-description">
+                <div class="visual-description__image" style="background-image:url(./img/yebo.png);"></div>
+                <p class="visual-description__name">YEBO</p>
+                <p class="visual-description__article">サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル </p>
+              </div>
+              <div class="visual-description">
+                <div class="visual-description__image" style="background-image:url(./img/chebo.png);"></div>
+                <p class="visual-description__name">CHEBO</p>
+                <p class="visual-description__article">サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル </p>
+              </div>
             </div>
-            <div class="item">
-              <img class="item-img">
-              <p class="item-txt"></p>
+          </section>
+        </div>
+
+        <div class="usage-wrapper">
+          <section class="usage">
+            <h1 class="section-title">USAGE</h1>
+            <!-- <div class="usage-movie">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/bCCXiM-DAS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+            <div class="usage-movie">
+              <iframe src="https://www.youtube.com/embed/HviarppGK9Q" width="600" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="item">
-              <img class="item-img">
-              <p class="item-txt"></p>
+            <div class="usage-img-container">
+              <div class="usage-img" style="background-image:url(https://placehold.jp/20/aaa/999/425x150.png?text=HOW)"></div>
+              <div class="usage-img" style="background-image:url(./img/schedule_clip.svg)"></div>
+              <div class="usage-img__description">
+                <h2 class="usage-img__description-ttl">アプリでスケジュール入力</h2>
+                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+              <div class="usage-img" style="background-image:url(./img/eachcall.png)"></div>
+              <div class="usage-img__description">
+                <h2 class="usage-img__description-ttl">イェボとチェボがお互いを呼び合います</h2>
+                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+              <div class="usage-img" style="background-image:url(./img/teke_sp.svg)"></div>
+              <div class="usage-img__description">
+                <h2 class="usage-img__description-ttl">手元のイェボをチェボに会わせてあげます</h2>
+                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+              <div class="usage-img" style="background-image:url(./img/kitchen.png);background-position: top right;"></div>
+              <div class="usage-img__description">
+                <h2 class="usage-img__description-ttl">ウリボのおしゃべり中にあなたは家事を</h2>
+                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
             </div>
+          </section>
+          <div class="invest-button-wrapper">
+            <button class="invest-button">プロジェクトを支援する</button>
+            <ul class="invest-button__share-list">
+              <!-- <li><button class="share-pin">シェア</button></li> -->
+              <li><button class="invest-button__share --fb"></button></li>
+              <li><button class="invest-button__share --twitter"></button></li>
+              <li><button class="invest-button__share --insta"></button></li>
+              <li><button class="invest-button__share --url"></button></li>
+            </ul>
           </div>
-        </section>
+        </div>
       </section>
 
-      <section class="variation-wrapper">
-        <section class="variation">
-          <h1>VARIATION</h1>
-        </section>
-      </section>
+      <section class="section --4">
+        <div class="tech-wrapper">
+          <section class="tech">
+            <h1 class="section-title">TECHNOLOGY</h1>
+            <div class="tech-item-container">
+              <h2 class="tech-item__ttl">NFC通信</h2>
+              <div class="tech-item">
+                <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
+                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+              <div class="tech-item">
+                <div class="tech-item__img" style="background-image:url(./img/nfc_attachment.png)"></div>
+                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+              <h2 class="tech-item__ttl">アプリで簡単</h2>
+              <div class="tech-item">
+                <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
+                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+              <h2 class="tech-item__ttl">Wi-Fi/bluetooth通信</h2>
+              <div class="tech-item">
+                <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
+                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              </div>
+            </div>
+          </section>
+        </div>
 
-      <section class="plans-wrapper">
-        <section class="plans">
-          <h1>PLANS</h1>
-          <div class="plans-items">
-            <div class="item">
-              <img class="item-img" src="" alt="">
-              <p class="item-set">早寝早起きセット</p>
-              <p class="item-tittle">YEBO + CHEBO（ ナイトキャップ，ふたば ）</p>
-              <div class="item-value">
-                <p class="amount"></p>
-                <p class="people"></p>
+        <!-- <section class="variation-wrapper">
+          <section class="variation">
+            <h1 class="section-title">VARIATION</h1>
+          </section>
+        </section> -->
+
+        <div class="plans-wrapper">
+          <section class="plans">
+            <h1 class="section-title">PLANS</h1>
+            <div class="swiper-container">
+              <div class="plans-item-container swiper-wrapper">
+                <div class="plans-item-wrapper swiper-slide">
+                  <div class="plans-item">
+                    <div class="plans-item__img" style="background-image: url(https://placehold.jp/20/ccc/999/250x200.png?text=早寝早起き);"></div>
+                    <article class="plans-item__description">
+                      <p class="plans-item__description-set">早寝早起きセット</p>
+                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">（ ナイトキャップ，ふたば ）</span></p>
+                      <div class="plans-item__description-value">
+                        <p class="amount">15,000</p>
+                        <p class="people">3,654</p>
+                      </div>
+                      <div class="invest-button-wrapper">
+                        <button class="invest-button">プロジェクトを支援する</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="plans-item-wrapper swiper-slide">
+                  <div class="plans-item">
+                    <div class="plans-item__img" style="background-image: url(https://placehold.jp/20/ccc/999/250x200.png?text=早寝早起き);"></div>
+                    <article class="plans-item__description">
+                      <p class="plans-item__description-set">お料理セット</p>
+                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">（ コック帽，皿洗い ）</span></p>
+                      <div class="plans-item__description-value">
+                        <p class="amount">15,000</p>
+                        <p class="people">2,983</p>
+                      </div>
+                      <div class="invest-button-wrapper">
+                        <button class="invest-button">プロジェクトを支援する</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="plans-item-wrapper swiper-slide">
+                  <div class="plans-item">
+                    <div class="plans-item__img" style="background-image: url(https://placehold.jp/20/ccc/999/250x200.png?text=早寝早起き);"></div>
+                    <article class="plans-item__description">
+                      <p class="plans-item__description-set">お風呂場セット</p>
+                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">（ てぬぐい，洗濯かご ）</span></p>
+                      <div class="plans-item__description-value">
+                        <p class="amount">15,000</p>
+                        <p class="people">2,305</p>
+                      </div>
+                      <div class="invest-button-wrapper">
+                        <button class="invest-button">プロジェクトを支援する</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-prev swiper-button-black"></div>
+              <div class="swiper-button-next swiper-button-black"></div>
+              <div class="swiper-pagination swiper-pagination-black"></div>
             </div>
-            <div class="button-wrapper">
-              <button class="invest-button">プロジェクトを支援する</button>
-            </div>
-          </div>
-          <div class="plans-items">
-            <div class="item">
-              <img class="item-img" src="" alt="">
-              <p class="item-set">お料理セット</p>
-              <p class="item-tittle">YEBO + CHEBO（ コック帽，皿洗い ）</p>
-              <div class="item-value">
-                <p class="amount"></p>
-                <p class="people"></p>
-              </div>
-            </div>
-            <div class="button-wrapper">
-              <button class="invest-button">プロジェクトを支援する</button>
-            </div>
-          </div>
-          <div class="plans-items">
-            <div class="item">
-              <img class="item-img" src="" alt="">
-              <p class="item-set">早寝早起きセット</p>
-              <p class="item-tittle">YEBO + CHEBO（ シャンプーハット，洗濯かご ）</p>
-              <div class="item-value">
-                <p class="amount"></p>
-                <p class="people"></p>
-              </div>
-            </div>
-            <div class="button-wrapper">
-              <button class="invest-button">プロジェクトを支援する</button>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </section>
 
       <div class="team-wrapper">
-        <div class="team">
-
-        </div>
+        <section class="team">
+          <h1 class="section-title">TEAM</h1>
+          <ul class="team-item-list">
+            <li class="team-item">
+              <div class="team-item__img" style="background-image:url(https://placehold.jp/20/ccc/999/100x50.png?text=1)"></div>
+              <p class="team-item__name">name 1</p>
+            </li>
+            <li class="team-item">
+              <div class="team-item__img" style="background-image:url(https://placehold.jp/20/ccc/999/100x50.png?text=2)"></div>
+              <p class="team-item__name">name 2</p>
+            </li>
+            <li class="team-item">
+              <div class="team-item__img" style="background-image:url(https://placehold.jp/20/ccc/999/100x50.png?text=3)"></div>
+              <p class="team-item__name">name 3</p>
+            </li>
+            <li class="team-item">
+              <div class="team-item__img" style="background-image:url(https://placehold.jp/20/ccc/999/100x50.png?text=4)"></div>
+              <p class="team-item__name">name 4</p>
+            </li>
+            <li class="team-item">
+              <div class="team-item__img" style="background-image:url(./img/meow.jpg)"></div>
+              <p class="team-item__name">小林陽昭</p>
+            </li>
+          </ul>
+        </section>
       </div>
-    </ｍ>
+    </ｍain>
+
     <footer>
-      <div class="footer">
 
+      <div class="footer">
+        <div class="logo"></div>
+        <p>Copyright © for Inc, All rights reserved.</p>
       </div>
-      <script src="https://kit.fontawesome.com/62f71bdfb8.js" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-      <script type="text/javascript" src="./slick/slick.js"></script>
-      <script type="text/javascript" src="./js/main.js"></script>
     </footer>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
