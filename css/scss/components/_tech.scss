@@ -10,17 +10,8 @@
     align-items: center;
     margin-top: 10px;
     padding: 10px 0;
-    &__img {
-      width: calc( ( 100% - 5px ) / 2 );
-      height: 100px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: left;
-    }
-    &__txt {
-      width: calc( ( 100% - 5px ) / 2 );
-      margin-left: 10px;
-      text-align: center;
+    @include pc {
+      flex-direction: column;
     }
     &-container {
       width: 100%;
@@ -29,9 +20,47 @@
       justify-content: space-evenly;
       align-items: center;
       margin-top: 20px;
+      @include pc {
+        flex-direction: row;
+      }
+    }
+    &-wrapper {
+      @include pc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:nth-child(n+2) {
+          margin-left: 20px;
+        }
+        .flex-wrapper-pc {
+          display: flex;
+        }
+      }
+    }
+    &__img {
+      width: calc( ( 100% - 5px ) / 2 );
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
+      @include pc {
+        width: 200px;
+        height: 150px;
+        background-position: center;
+      }
+    }
+    &__txt {
+      width: calc( ( 100% - 5px ) / 2 );
+      margin-left: 10px;
+      text-align: center;
+      @include pc {
+        width: auto;
+        margin-top: 20px;
+      }
     }
     &__ttl {
       margin-top: 20px;
+      text-align: center;
     }
   }
   &-wrapper {

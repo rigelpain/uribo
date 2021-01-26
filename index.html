@@ -18,16 +18,21 @@
 
   <body>
     <div class="header-wrapper">
-      <header class="header">
+      <header class="header-pc">
         <div class="header__logo"></div>
         <div class="invest-button--clear-wrapper">
           <button class="invest-button--clear">プロジェクトを支援する</button>
         </div>
       </header>
+      <header class="header-sp">
+        <div class="invest-button--white-wrapper">
+          <button class="invest-button--white">プロジェクトを支援する</button>
+        </div>
+      </header>
     </div>
     
     <main>
-      <section class="section --1">
+      <section class="section part-1">
         <div class="hero-wrapper">
           <section class="hero">
             <div class="hero__logo-wrapper">
@@ -43,7 +48,7 @@
           </section>
         </div>
       </section>
-      <section class="section --2">
+      <section class="section part-2">
         <div class="concept-wrapper">
           <section class="concept">
             <div class="concept-img"></div>
@@ -102,7 +107,7 @@
         </div>
       </section>
 
-      <section class="section --3">
+      <section class="section part-3">
         <div class="visual-wrapper">
           <section class="visual">
             <h1 class="section-title">URIBO</h1>
@@ -128,72 +133,92 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/bCCXiM-DAS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->
             <div class="usage-movie">
-              <iframe src="https://www.youtube.com/embed/HviarppGK9Q" width="600" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="600" height="450" src="https://www.youtube.com/embed/Tj_v7ewDSHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="usage-img-container">
-              <div class="usage-img" style="background-image:url(https://placehold.jp/20/aaa/999/425x150.png?text=HOW)"></div>
-              <div class="usage-img" style="background-image:url(./img/schedule_clip.svg)"></div>
-              <div class="usage-img__description">
-                <h2 class="usage-img__description-ttl">アプリでスケジュール入力</h2>
-                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+            <div class="usage-item-container">
+              <!-- <div class="usage-item" style="background-image:url(https://placehold.jp/20/aaa/999/425x150.png?text=HOW)"></div> -->
+              <div class="usage-item">
+                <div class="usage-item__img" style="background-image:url(./img/schedule_clip.svg)"></div>
+                <div class="usage-item__description">
+                  <h2 class="usage-item__description-ttl">アプリでスケジュール入力</h2>
+                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                </div>
               </div>
-              <div class="usage-img" style="background-image:url(./img/eachcall.png)"></div>
-              <div class="usage-img__description">
-                <h2 class="usage-img__description-ttl">イェボとチェボがお互いを呼び合います</h2>
-                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              <div class="usage-item">
+                <div class="usage-item__img" style="background-image:url(./img/eachcall.png)"></div>
+                <div class="usage-item__description">
+                  <h2 class="usage-item__description-ttl">イェボとチェボがお互いを呼び合います</h2>
+                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                </div>
               </div>
-              <div class="usage-img" style="background-image:url(./img/teke_sp.svg)"></div>
-              <div class="usage-img__description">
-                <h2 class="usage-img__description-ttl">手元のイェボをチェボに会わせてあげます</h2>
-                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              <div class="usage-item">
+                <div class="usage-item__img" style="background-image:url(./img/teke_sp.svg)"></div>
+                <div class="usage-item__description">
+                  <h2 class="usage-item__description-ttl">手元のイェボをチェボに会わせてあげます</h2>
+                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                </div>
               </div>
-              <div class="usage-img" style="background-image:url(./img/kitchen.png);background-position: top right;"></div>
-              <div class="usage-img__description">
-                <h2 class="usage-img__description-ttl">ウリボのおしゃべり中にあなたは家事を</h2>
-                <p class="usage-img__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+              <div class="usage-item">
+                <div class="usage-item__img" style="background-image:url(./img/kitchen.png);background-position: top right;"></div>
+                <div class="usage-item__description">
+                  <h2 class="usage-item__description-ttl">ウリボのおしゃべり中<br>ついでに家事をしてしまいましょう</h2>
+                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                </div>
               </div>
             </div>
           </section>
-          <div class="invest-button-wrapper">
-            <button class="invest-button">プロジェクトを支援する</button>
-            <ul class="invest-button__share-list">
-              <!-- <li><button class="share-pin">シェア</button></li> -->
-              <li><button class="invest-button__share --fb"></button></li>
-              <li><button class="invest-button__share --twitter"></button></li>
-              <li><button class="invest-button__share --insta"></button></li>
-              <li><button class="invest-button__share --url"></button></li>
-            </ul>
+          <section class="pc-reverse">
+            <div class="invest-button-wrapper">
+              <button class="invest-button">プロジェクトを支援する</button>
+              <ul class="invest-button__share-list">
+                <!-- <li><button class="share-pin">シェア</button></li> -->
+                <li><button class="invest-button__share --fb"></button></li>
+                <li><button class="invest-button__share --twitter"></button></li>
+                <li><button class="invest-button__share --insta"></button></li>
+                <li><button class="invest-button__share --url"></button></li>
+              </ul>
+            </div>
+            
+            <div class="tech-wrapper">
+              <section class="tech">
+                <h1 class="section-title">TECHNOLOGY</h1>
+                <div class="tech-item-container">
+                  <div class="tech-item-wrapper">
+                    <h2 class="tech-item__ttl">アプリで簡単</h2>
+                    <div class="tech-item">
+                      <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
+                      <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                    </div>
+                  </div>
+                  <div class="tech-item-wrapper">
+                    <h2 class="tech-item__ttl">NFC通信</h2>
+                    <div class="flex-wrapper-pc">
+                      <div class="tech-item">
+                        <div class="tech-item__img" style="background-image:url(./img/nfc_touch.svg)"></div>
+                        <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                      </div>
+                      <div class="tech-item">
+                        <div class="tech-item__img" style="background-image:url(./img/nfc_attachment.png)"></div>
+                        <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tech-item-wrapper">
+                    <h2 class="tech-item__ttl">Wi-Fi/bluetooth通信</h2>
+                    <div class="tech-item">
+                      <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
+                      <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
+
+          </section>
       </section>
 
-      <section class="section --4">
-        <div class="tech-wrapper">
-          <section class="tech">
-            <h1 class="section-title">TECHNOLOGY</h1>
-            <div class="tech-item-container">
-              <h2 class="tech-item__ttl">NFC通信</h2>
-              <div class="tech-item">
-                <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
-                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-              </div>
-              <div class="tech-item">
-                <div class="tech-item__img" style="background-image:url(./img/nfc_attachment.png)"></div>
-                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-              </div>
-              <h2 class="tech-item__ttl">アプリで簡単</h2>
-              <div class="tech-item">
-                <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
-                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-              </div>
-              <h2 class="tech-item__ttl">Wi-Fi/bluetooth通信</h2>
-              <div class="tech-item">
-                <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
-                <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-              </div>
-            </div>
-          </section>
-        </div>
+      <section class="section part-4">
 
         <!-- <section class="variation-wrapper">
           <section class="variation">

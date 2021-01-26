@@ -6,11 +6,20 @@
   &-wrapper {
     margin-top: $section-margin;
     padding: 0 40px;
+    @include pc {
+      margin-top: 25px;
+      width: 50%;
+      min-width: 300px;
+    }
   }
   &-now {
     &__txt {
-      padding-left: $before-icon-padding;
+      padding-left: $before-icon__padding-sp;
       position: relative;
+      @include pc {
+        font-size: 1.6rem;
+        padding-left: $before-icon__padding-pc;
+      }
       &::before {
         position: absolute;
         left: 0;
@@ -25,6 +34,9 @@
       font-size: 2rem;
       font-weight: bold;
       letter-spacing: 2px;
+      @include pc {
+        font-size: 4rem;
+      }
     }
     .unit {
       margin-left: 5px;
@@ -58,9 +70,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    @include pc {
+      margin-top: 10px;
+    }
+    &-wrapper {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      @include pc {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
     &__txt {
       position: relative;
-      padding-left: $before-icon-padding;
+      padding-left: $before-icon__padding-sp;
+      @include pc {
+        font-size: 1.6rem;
+        padding-left: $before-icon__padding-pc;
+      }
       &::before {
         position: absolute;
         left: 0;
@@ -87,17 +117,13 @@
     &__value {
       font-size: 1.6rem;
       font-weight: bold;
+      @include pc {
+        font-size: 2rem;
+      }
       &-unit {
         margin-left: 3px;
         font-weight: normal;
       }
-    }
-    &-wrapper {
-      margin-top: 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
     }
   }
     
@@ -120,6 +146,7 @@
     margin-top: 40px;
   }
   &__share {
+    z-index: -100 !important;
     &-list {
       display: flex;
       justify-content: space-between;

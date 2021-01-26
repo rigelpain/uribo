@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  @include pc {
+    padding: 0 40px;
+  }
   &-wrapper {
     margin-top: $section-margin;
   }
@@ -21,6 +25,7 @@
     }
     &-wrapper {
       padding: 20px 40px 40px;
+      width: 100%;
     }
     &__img {
       width: 100%;
@@ -76,7 +81,12 @@
     margin-top: 20px;
     width: 100%;
   }
-  .invest-button-wrapper {
-    margin-top: 10px;
+  .swiper-slide {
+    @include pc {
+      width: 300px;
+    }
   }
+  // .invest-button-wrapper {
+  //   margin-top: 10px;
+  // }
 }
