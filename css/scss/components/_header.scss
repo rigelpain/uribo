@@ -1,49 +1,47 @@
 .header {
-  &-pc {
-    padding: 5px 15px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-wrapper {
-      position: fixed;
-      width: 100%;
-      height: 60px;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      backdrop-filter: blur(5px);
-    }
-    &__logo {
-      width: 120px;
-      height: 30px;
-      background-image: url("../img/uribo-logo.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-    @include pc {
-      display: none;
-    }
+  padding: 5px 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+  &__logo {
+    width: 80px;
+    height: 30px;
+    background-image: url("../img/logo_white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
   }
-  &-sp {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    .invest-button--white {
-      width: 200px;
-      height: 50px;
-      font-weight: bold;
-      border: 3px solid $black;
-      border-radius: 10px;
-      background-color: $white;
-      z-index: 1000;
-    }
-    @include pc {
-      display: block;
-    }
+  .logo-black {
+    background-image: url("../img/logo_black.svg");
+  }
+  .color-black {
+    color: $black;
+    transition-duration: 0.5s;
+    border-color: $black;
+  }
+  .border-color-black {
+    border-color: $black;
+    transition-duration: 0.5s;
+  }
+  .invest-button--white {
+    transition-duration: 0.5s;
+  }
+  #header__color {
+    transition-duration: 0.5s;
+  }
+  #header__border-color {
+    transition-duration: 0.5s;
+  }
+  #header__logo-color {
+    transition-duration: 0.5s;
   }
 }
-

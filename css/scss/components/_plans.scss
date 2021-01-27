@@ -5,10 +5,15 @@
   align-items: center;
   width: 100vw;
   @include pc {
-    padding: 0 40px;
+    // padding: 0 40px;
+    max-width: 1000px;
   }
   &-wrapper {
     margin-top: $section-margin;
+    @include pc {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &-item {
     display: flex;
@@ -17,7 +22,7 @@
     box-shadow: 0 0px 6px $shadow;
     border-radius: 10px;
     overflow: hidden;
-
+    
     &-container {
       width: 100%;
       // margin-top: $section-margin;
@@ -30,12 +35,18 @@
     &__img {
       width: 100%;
       height: 200px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
     &__description {
       width: 100%;
       height: auto;
       margin-top: 20px;
       padding: 0 20px 20px;
+      .invest-button-wrapper {
+        margin-top: 10px;
+      }
       &-set {
 
       }
@@ -75,6 +86,42 @@
           }
         }
       }
+    }
+  }
+  .-crown {
+    &::before{
+      content: '\f521';
+      display: inline;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 2px 6px #424242;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 2rem;
+      z-index: 100;
+      line-height: 4.5rem;
+      text-align: center;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+  .-gold {
+    &::before {
+      color: $gold;
+    }
+  }
+  .-silver {
+    &::before {
+      color: $silver;
+    }
+  }
+  .-copper {
+    &::before {
+      color: $copper;
     }
   }
   .swiper-container {

@@ -42,6 +42,9 @@
       margin-left: 5px;
       font-size: 1.4rem;
       font-weight: bold;
+      @include pc {
+        font-size: 2rem;
+      }
     }
   }
   &-meter {
@@ -146,7 +149,6 @@
     margin-top: 40px;
   }
   &__share {
-    z-index: -100 !important;
     &-list {
       display: flex;
       justify-content: space-between;
@@ -217,9 +219,8 @@
   &--clear {
     color: $white;
     padding: 5px 20px;
-    border: 1px solid $white;
+    border: 2px solid $white;
     border-radius: 5px;
-    &-wrapper {
-    }
+    font-weight: bold;
   }
 }

@@ -10,16 +10,19 @@
   &-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
     margin-top: 40px;
+    @include pc {
+      font-size: 1.2rem;
+    }
     &:nth-child(n+2) {
       margin-left: 25px;
     }
     &-container {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
     &__image {
       width: 150px;
@@ -28,14 +31,21 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      @include pc {
+        width: 300px;
+        height: 300px;
+      }
     }
     &__name {
       margin-top: 10px;
       font-size: 1.4rem;
       text-align: center;
+      font-weight: bold;
     }
     &__article {
       margin-top: 10px;
+      padding: 0 10px;
+      text-align: center;
     }
   }
   

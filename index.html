@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#E3FFE3">
+    <meta name="description" content="運ぶ箱と整える生活。このサイトは公立はこだて未来大学の学生が授業課題で作成したクラウドファンディングを模したwebサイトです">
+    <link rel="icon" href="./img/favicon.svg" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link
@@ -13,20 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <title>URIBO</title>
+    <title>運ぶ箱と整える生活｜URIBO</title>
   </head>
 
   <body>
     <div class="header-wrapper">
-      <header class="header-pc">
-        <div class="header__logo"></div>
-        <div class="invest-button--clear-wrapper">
-          <button class="invest-button--clear">プロジェクトを支援する</button>
-        </div>
-      </header>
-      <header class="header-sp">
-        <div class="invest-button--white-wrapper">
-          <button class="invest-button--white">プロジェクトを支援する</button>
+      <header class="header">
+        <div class="header__logo" id="header__logo-color"></div>
+        <div class="invest-button--clear-wrapper" id="survey-link-1">
+          <button type="button" class="invest-button--clear" id="header__color">プロジェクトを支援する</button>
         </div>
       </header>
     </div>
@@ -36,14 +34,14 @@
         <div class="hero-wrapper">
           <section class="hero">
             <div class="hero__logo-wrapper">
-              <img class="hero__logo" src="./img/uribo-logo.png">
+              <div class="hero__logo"></div>
             </div>
             <div class="hero-article">
               <div class="hero-article__txt">運ぶ箱と</div>
               <div class="hero-article__txt">整える生活</div>
             </div>
             <div class="invest-button--clear-wrapper">
-              <button class="invest-button--clear">プロジェクトを支援する</button>
+              <button type="button" class="invest-button--clear" id="survey-link-2">プロジェクトを支援する</button>
             </div>
           </section>
         </div>
@@ -54,8 +52,8 @@
             <div class="concept-img"></div>
             <div class="concept-article">
               <p class="concept-article__txt">
-                頭でわかっていても<br>
-                体がなかなか動いてくれない...
+                家事もお風呂も、「腰を上げるまで」が<br>
+                一番めんどくさい...
               </p>
               <p class="concept-article__txt">
                 ゲームや趣味に夢中になって<br>
@@ -73,7 +71,7 @@
           <section class="invest">
             <div class="invest-now">
               <p class="invest-now__txt">現在の支援額</p>
-              <p class="invest-now__value">2,637,160<span class="unit">円</span></p>
+              <p class="invest-now__value">8,790,000<span class="unit">円</span></p>
             </div>
             <div class="invest-meter">
               <div class="invest-meter__bar">
@@ -83,7 +81,7 @@
             <div class="invest-parameter-wrapper">
               <div class="invest-parameter">
                 <p class="invest-parameter__txt --person">支援者数</p>
-                <p class="invest-parameter__value">8,942<span class="invest-parameter__value-unit">人</span></p>
+                <p class="invest-parameter__value">576<span class="invest-parameter__value-unit">人</span></p>
               </div>
               <div class="invest-parameter">
                 <p class="invest-parameter__txt --clock">募集終了まで</p>
@@ -91,16 +89,19 @@
               </div>
               <div class="invest-parameter">
                 <p class="invest-parameter__txt --flag">目標金額</p>
-                <p class="invest-parameter__value">3,000,000<span class="invest-parameter__value-unit">円</span></p>
+                <p class="invest-parameter__value">10,000,000<span class="invest-parameter__value-unit">円</span></p>
               </div>
             </div>
             <div class="invest-button-wrapper">
-              <button class="invest-button">プロジェクトを支援する</button>
+              <button type="button" class="invest-button" id="survey-link-3">プロジェクトを支援する</button>
               <ul class="invest-button__share-list">
-                <li><button class="invest-button__share --fb"></button></li>
-                <li><button class="invest-button__share --twitter"></button></li>
-                <li><button class="invest-button__share --insta"></button></li>
-                <li><button class="invest-button__share --url"></button></li>
+                <li><button type="button" class="invest-button__share --fb"></button></li>
+                <li>
+                  <a href="https://twitter.com/share?url=http://rigelpain.s1008.xrea.com/x/uribo/&text=運ぶ箱と整える生活 URIBO - クラウドファンディング">
+                    <button type="button" class="invest-button__share --twitter"></button></li>
+                  </a>
+                <li><button type="button" class="invest-button__share --insta"></button></li>
+                <li><button type="button" class="invest-button__share --url" id="copy-url-1"></button></li>
               </ul>
             </div>
           </section>
@@ -114,13 +115,31 @@
             <div class="visual-description-container">
               <div class="visual-description">
                 <div class="visual-description__image" style="background-image:url(./img/yebo.png);"></div>
-                <p class="visual-description__name">YEBO</p>
-                <p class="visual-description__article">サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル </p>
+                <p class="visual-description__name">イェボ</p>
+                <p class="visual-description__article">
+                  あなたと暮らす小さい箱<br>
+                  <br>
+                  イェボはご主人であるあなたが大好きです。<br>
+                  家にいる間は手元においてあげましょう<br>
+                  <br>
+                  イェボはチェボたちのことも大好きです。<br>
+                  遊びたがっていたら運んであげましょう<br>
+                </p>
               </div>
               <div class="visual-description">
                 <div class="visual-description__image" style="background-image:url(./img/chebo.png);"></div>
-                <p class="visual-description__name">CHEBO</p>
-                <p class="visual-description__article">サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル サンプル </p>
+                <p class="visual-description__name">チェボ</p>
+                <p class="visual-description__article">
+                  あなたと暮らす大きい箱<br>
+                  <br>
+                  チェボはイェボのお友達。<br>
+                  キッチンや洗面台、<br>
+                  ベッドの近くにおいてあげましょう<br>
+                  <br>
+                  チェボは置いてあげる場所に合わせて<br>
+                  ぼうしを着せ替えてあげましょう。<br>
+                  コックさんなど、いろんな姿に変身します<br>
+                </p>
               </div>
             </div>
           </section>
@@ -133,89 +152,144 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/bCCXiM-DAS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->
             <div class="usage-movie">
-              <iframe width="600" height="450" src="https://www.youtube.com/embed/Tj_v7ewDSHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="600" height="450" src="https://www.youtube.com/embed/N_yKoe06ZK8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="usage-item-container">
               <!-- <div class="usage-item" style="background-image:url(https://placehold.jp/20/aaa/999/425x150.png?text=HOW)"></div> -->
               <div class="usage-item">
-                <div class="usage-item__img" style="background-image:url(./img/schedule_clip.svg)"></div>
+                <div class="usage-item__img" style="background-image:url(./img/work.svg)"></div>
                 <div class="usage-item__description">
-                  <h2 class="usage-item__description-ttl">アプリでスケジュール入力</h2>
-                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                  <h2 class="usage-item__description-ttl">チェボのお仕事を決める</h2>
+                  <p class="usage-item__description-txt">
+                    初期設定として、<br>
+                    チェボにぼうしを被せてお仕事をあげましょう<br>
+                    <br>
+                    ぼうしはマグネットでくっつきます<br>
+                  </p>
                 </div>
               </div>
               <div class="usage-item">
-                <div class="usage-item__img" style="background-image:url(./img/eachcall.png)"></div>
+                <div class="usage-item__img" style="background-image:url(./img/schedule_sp.svg)"></div>
                 <div class="usage-item__description">
-                  <h2 class="usage-item__description-ttl">イェボとチェボがお互いを呼び合います</h2>
-                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                  <h2 class="usage-item__description-ttl">アプリでスケジュール入力</h2>
+                  <p class="usage-item__description-txt">
+                    あなたの１日をウリボに教えてあげましょう<br>
+                    <br>
+                    あなたと暮らしているチェボ「起床」「掃除」「料理」「睡眠」などと時間をセットで入力します<br>
+                    <br>
+                    平日・曜日・特別な日など、カテゴリごとに設定することができます
+                  </p>
+                </div>
+              </div>
+              <div class="usage-item">
+                <div class="usage-item__img" style="background-image:url(./img/eachcall.svg)"></div>
+                <div class="usage-item__description">
+                  <h2 class="usage-item__description-ttl">イェボとチェボがお互いを呼び合う</h2>
+                  <p class="usage-item__description-txt">
+                    アプリで設定した時間になると<br>
+                    イェボとチェボが呼び合います
+                  </p>
                 </div>
               </div>
               <div class="usage-item">
                 <div class="usage-item__img" style="background-image:url(./img/teke_sp.svg)"></div>
                 <div class="usage-item__description">
-                  <h2 class="usage-item__description-ttl">手元のイェボをチェボに会わせてあげます</h2>
-                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                  <h2 class="usage-item__description-ttl">手元のイェボを運ぶ</h2>
+                  <p class="usage-item__description-txt">
+                    あなたのそばにいるイェボを<br>
+                    チェボのいる場所へ運んであげましょう<br>
+                  </p>
                 </div>
               </div>
               <div class="usage-item">
-                <div class="usage-item__img" style="background-image:url(./img/kitchen.png);background-position: top right;"></div>
+                <div class="usage-item__img" style="background-image:url(./img/kitchen.png)"></div>
                 <div class="usage-item__description">
-                  <h2 class="usage-item__description-ttl">ウリボのおしゃべり中<br>ついでに家事をしてしまいましょう</h2>
-                  <p class="usage-item__description-txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
+                  <h2 class="usage-item__description-ttl">ウリボのおしゃべりを聞きながら<br>ついでに家事をしよう</h2>
+                  <p class="usage-item__description-txt">
+                    イェボをチェボの隣にくっつけてあげましょう<br>
+                    側面にある手のマーク同士を合わせます<br>
+                    <br>
+                    イェボとチェボを合わせてあげると<br>
+                    ごきげんになっておしゃべりを始めます<br>
+                    <br>
+                    あなたはウリボのごきげんなおしゃべりをBGMに、<br>
+                    目についた家事をこなしてしまいましょう<br>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="invest-button-wrapper">
+              <button type="button" class="invest-button" id="survey-link-4">プロジェクトを支援する</button>
+              <ul class="invest-button__share-list">
+                <!-- <li><button type="button" class="share-pin">シェア</button></li> -->
+                <li><button type="button" class="invest-button__share --fb"></button></li>
+                <li>
+                  <a href="https://twitter.com/share?url=http://rigelpain.s1008.xrea.com/x/uribo/&text=運ぶ箱と整える生活 URIBO - クラウドファンディング">
+                    <button type="button" class="invest-button__share --twitter"></button></li>
+                  </a>
+                <li><button type="button" class="invest-button__share --insta"></button></li>
+                <li><button type="button" class="invest-button__share --url" id="copy-url-2"></button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tech-wrapper">
+          <section class="tech">
+            <h1 class="section-title">TECHNOLOGY</h1>
+            <div class="tech-item-container">
+              <div class="tech-item-wrapper">
+                <h2 class="tech-item__ttl">アプリで簡単</h2>
+                <div class="tech-item">
+                  <div class="tech-item__img" style="background-image:url(./img/app.svg)"></div>
+                  <p class="tech-item__txt">
+                    スケジュールをアプリで入力<br>
+                    今日の家事予定も簡単確認
+                  </p>
+
+                </div>
+              </div>
+              <div class="tech-item-wrapper">
+                <h2 class="tech-item__ttl">NFC通信</h2>
+                <div class="flex-wrapper-pc">
+                  <div class="tech-item">
+                    <div class="tech-item__img" style="background-image:url(./img/nfc_touch.svg)"></div>
+                    <p class="tech-item__txt">
+                      ウリボの側面内部に<br>
+                      FCリーダー/タグを搭載<br>
+                      <br>
+                      手を合わせるように<br>
+                      隣に置くと反応し、<br>
+                      おしゃべりを始めます<br>
+                    </p>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-item__img" style="background-image:url(./img/nfc_attachment.svg)"></div>
+                    <p class="tech-item__txt">
+                      チェボ上面内部とぼうしにも<br>
+                      NFCリーダー/タグを搭載<br>
+                      <br>
+                      チェボはぼうしから<br>
+                      自分の仕事を読み取って<br>
+                      アプリに情報を送信します<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tech-item-wrapper">
+                <h2 class="tech-item__ttl">Wi-Fi通信</h2>
+                <div class="tech-item">
+                  <div class="tech-item__img" style="background-image:url(./img/wireless.svg)"></div>
+                  <p class="tech-item__txt">
+                    ウリボはWi-Fiを通してアプリと通信をします<br>
+                    <br>
+                    アプリから各チェボをスリープさせることも可能<br>
+                  </p>
                 </div>
               </div>
             </div>
           </section>
-          <section class="pc-reverse">
-            <div class="invest-button-wrapper">
-              <button class="invest-button">プロジェクトを支援する</button>
-              <ul class="invest-button__share-list">
-                <!-- <li><button class="share-pin">シェア</button></li> -->
-                <li><button class="invest-button__share --fb"></button></li>
-                <li><button class="invest-button__share --twitter"></button></li>
-                <li><button class="invest-button__share --insta"></button></li>
-                <li><button class="invest-button__share --url"></button></li>
-              </ul>
-            </div>
-            
-            <div class="tech-wrapper">
-              <section class="tech">
-                <h1 class="section-title">TECHNOLOGY</h1>
-                <div class="tech-item-container">
-                  <div class="tech-item-wrapper">
-                    <h2 class="tech-item__ttl">アプリで簡単</h2>
-                    <div class="tech-item">
-                      <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
-                      <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-                    </div>
-                  </div>
-                  <div class="tech-item-wrapper">
-                    <h2 class="tech-item__ttl">NFC通信</h2>
-                    <div class="flex-wrapper-pc">
-                      <div class="tech-item">
-                        <div class="tech-item__img" style="background-image:url(./img/nfc_touch.svg)"></div>
-                        <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-                      </div>
-                      <div class="tech-item">
-                        <div class="tech-item__img" style="background-image:url(./img/nfc_attachment.png)"></div>
-                        <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tech-item-wrapper">
-                    <h2 class="tech-item__ttl">Wi-Fi/bluetooth通信</h2>
-                    <div class="tech-item">
-                      <div class="tech-item__img" style="background-image:url(./img/nfc_touch.png)"></div>
-                      <p class="tech-item__txt">テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト テキスト</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-
-          </section>
+        </div>
       </section>
 
       <section class="section part-4">
@@ -233,48 +307,80 @@
               <div class="plans-item-container swiper-wrapper">
                 <div class="plans-item-wrapper swiper-slide">
                   <div class="plans-item">
-                    <div class="plans-item__img" style="background-image: url(https://placehold.jp/20/ccc/999/250x200.png?text=早寝早起き);"></div>
+                    <div class="plans-item__img" style="background-image: url(./img/set_1.svg);"></div>
+                    <article class="plans-item__description">
+                      <p class="plans-item__description-set">スターターセット</p>
+                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">色変更・ぼうしカスタム可</span></p>
+                      <div class="plans-item__description-value">
+                        <p class="amount">8,000</p>
+                        <p class="people">30</p>
+                      </div>
+                      <div class="invest-button-wrapper">
+                        <button type="button" class="invest-button" id="survey-link-5">プロジェクトを支援する</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="plans-item-wrapper swiper-slide">
+                  <div class="plans-item -crown -gold">
+                    <div class="plans-item__img -gold" style="background-image: url(./img/set_2.svg);"></div>
                     <article class="plans-item__description">
                       <p class="plans-item__description-set">早寝早起きセット</p>
-                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">（ ナイトキャップ，ふたば ）</span></p>
+                      <p class="plans-item__description-title">YEBO + CHEBO×2<br><span class="plans-item__description-subtitle">（ 朝日，ナイトキャップ ）</span></p>
                       <div class="plans-item__description-value">
                         <p class="amount">15,000</p>
-                        <p class="people">3,654</p>
+                        <p class="people">194</p>
                       </div>
                       <div class="invest-button-wrapper">
-                        <button class="invest-button">プロジェクトを支援する</button>
+                        <button type="button" class="invest-button" id="survey-link-6">プロジェクトを支援する</button>
                       </div>
                     </article>
                   </div>
                 </div>
                 <div class="plans-item-wrapper swiper-slide">
-                  <div class="plans-item">
-                    <div class="plans-item__img" style="background-image: url(https://placehold.jp/20/ccc/999/250x200.png?text=早寝早起き);"></div>
+                  <div class="plans-item -crown -silver">
+                    <div class="plans-item__img" style="background-image: url(./img/set_3.svg);"></div>
                     <article class="plans-item__description">
                       <p class="plans-item__description-set">お料理セット</p>
-                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">（ コック帽，皿洗い ）</span></p>
+                      <p class="plans-item__description-title">YEBO + CHEBO×2<br><span class="plans-item__description-subtitle">（ コック帽，皿洗い ）</span></p>
                       <div class="plans-item__description-value">
                         <p class="amount">15,000</p>
-                        <p class="people">2,983</p>
+                        <p class="people">183</p>
                       </div>
                       <div class="invest-button-wrapper">
-                        <button class="invest-button">プロジェクトを支援する</button>
+                        <button type="button" class="invest-button" id="survey-link-7">プロジェクトを支援する</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="plans-item-wrapper swiper-slide">
+                  <div class="plans-item -crown -copper">
+                    <div class="plans-item__img" style="background-image: url(./img/set_4.svg);"></div>
+                    <article class="plans-item__description">
+                      <p class="plans-item__description-set">お風呂場セット</p>
+                      <p class="plans-item__description-title">YEBO + CHEBO×2<br><span class="plans-item__description-subtitle">（ てぬぐい，洗濯板 ）</span></p>
+                      <div class="plans-item__description-value">
+                        <p class="amount">15,000</p>
+                        <p class="people">145</p>
+                      </div>
+                      <div class="invest-button-wrapper">
+                        <button type="button" class="invest-button" id="survey-link-8">プロジェクトを支援する</button>
                       </div>
                     </article>
                   </div>
                 </div>
                 <div class="plans-item-wrapper swiper-slide">
                   <div class="plans-item">
-                    <div class="plans-item__img" style="background-image: url(https://placehold.jp/20/ccc/999/250x200.png?text=早寝早起き);"></div>
+                    <div class="plans-item__img" style="background-image: url(./img/set_5.svg);"></div>
                     <article class="plans-item__description">
-                      <p class="plans-item__description-set">お風呂場セット</p>
-                      <p class="plans-item__description-title">YEBO + CHEBO<br><span class="plans-item__description-subtitle">（ てぬぐい，洗濯かご ）</span></p>
+                      <p class="plans-item__description-set">全種セット</p>
+                      <p class="plans-item__description-title">YEBO + CHEBO×6<br><span class="plans-item__description-subtitle">（ ナイトキャップ, ふたば, コック帽, 皿洗い, てぬぐい, 洗濯かご ）</span></p>
                       <div class="plans-item__description-value">
-                        <p class="amount">15,000</p>
-                        <p class="people">2,305</p>
+                        <p class="amount">30,000</p>
+                        <p class="people">24</p>
                       </div>
                       <div class="invest-button-wrapper">
-                        <button class="invest-button">プロジェクトを支援する</button>
+                        <button type="button" class="invest-button" id="survey-link-9">プロジェクトを支援する</button>
                       </div>
                     </article>
                   </div>
@@ -288,7 +394,7 @@
         </div>
       </section>
 
-      <div class="team-wrapper">
+      <!-- <div class="team-wrapper">
         <section class="team">
           <h1 class="section-title">TEAM</h1>
           <ul class="team-item-list">
@@ -314,7 +420,7 @@
             </li>
           </ul>
         </section>
-      </div>
+      </div> -->
     </ｍain>
 
     <footer>
@@ -324,6 +430,7 @@
         <p>Copyright © for Inc, All rights reserved.</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
