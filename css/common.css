@@ -204,6 +204,9 @@ main iframe {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .invest-wrapper {
   margin-top: 100px;
@@ -232,7 +235,7 @@ main iframe {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: 900;
-  color: #cfe6b1;
+  color: #e7b240;
 }
 .invest-now__value {
   margin-top: 0;
@@ -314,7 +317,7 @@ main iframe {
   left: 0;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #cfe6b1;
+  color: #e7b240;
 }
 .invest-parameter .--person::before {
   content: "";
@@ -342,7 +345,7 @@ main iframe {
 .invest-button {
   width: 100%;
   color: white;
-  background-color: #d18686;
+  background-color: #dd4a7b;
   height: 60px;
   padding: 5px 20px;
   border-radius: 5px;
@@ -432,6 +435,9 @@ main iframe {
   justify-content: center;
   align-items: center;
 }
+.concept-wrapper {
+  margin-top: 20px;
+}
 @media print, screen and (min-width: 769px) {
   .concept-wrapper {
     width: 50%;
@@ -441,7 +447,7 @@ main iframe {
 .concept-img {
   width: 100%;
   height: 250px;
-  background-image: url("https://placehold.jp/20/ccc/999/425x200.png?text=concept-image");
+  background-image: url("../img/concept-img.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -486,6 +492,11 @@ main iframe {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media print, screen and (min-width: 769px) {
+  .visual-description-container {
+    width: 90%;
+  }
+}
 .visual-description__image {
   width: 150px;
   height: 150px;
@@ -520,9 +531,6 @@ main iframe {
 }
 .usage-wrapper {
   margin-top: 100px;
-}
-.usage-wrapper .invest-button-wrapper {
-  padding: 0 40px;
 }
 .usage-movie {
   position: relative;
@@ -607,10 +615,19 @@ main iframe {
   background-position: center;
   border-radius: 10px;
 }
+.usage .invest-button {
+  width: 100%;
+  margin: 0 auto;
+}
+.usage .invest-button-wrapper {
+  padding: 0 40px;
+  margin-top: 0;
+  max-width: 500px;
+}
 @media print, screen and (min-width: 769px) {
   .usage .invest-button-wrapper {
     width: 80%;
-    max-width: 500px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -729,6 +746,7 @@ main iframe {
   box-shadow: 0 0px 6px #424242;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 .plans-item-container {
   width: 100%;
@@ -746,9 +764,9 @@ main iframe {
 }
 .plans-item__description {
   width: 100%;
-  height: auto;
+  height: 80px;
   margin-top: 20px;
-  padding: 0 20px 20px;
+  padding: 0 20px;
 }
 .plans-item__description .invest-button-wrapper {
   margin-top: 10px;
@@ -760,29 +778,30 @@ main iframe {
 .plans-item__description-subtitle {
   font-size: 1.2rem;
 }
-.plans-item__description-value {
+.plans-item__value {
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-.plans-item__description-value p::before {
+.plans-item__value p::before {
   position: relative;
   left: -2px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #cfe6b1;
+  color: #e7b240;
 }
-.plans-item__description-value .amount {
+.plans-item__value .amount {
   font-size: 2rem;
 }
-.plans-item__description-value .amount::before {
+.plans-item__value .amount::before {
   content: "";
 }
-.plans-item__description-value .people {
+.plans-item__value .people {
   font-size: 1.2rem;
 }
-.plans-item__description-value .people::before {
+.plans-item__value .people::before {
   content: "";
 }
 .plans .-crown::before {
@@ -821,6 +840,11 @@ main iframe {
   .plans .swiper-slide {
     width: 300px;
   }
+}
+.plans .invest-button-wrapper {
+  margin: 10px auto 20px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .team {
@@ -903,4 +927,8 @@ footer {
 
 .swiper-container {
   z-index: 0 !important;
+}
+
+.swal-button--ok {
+  background-color: #dd4a7b;
 }

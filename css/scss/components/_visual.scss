@@ -23,6 +23,9 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      @include pc {
+        width: 90%;
+      }
     }
     &__image {
       width: 150px;
