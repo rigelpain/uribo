@@ -663,6 +663,7 @@ main iframe {
 @media print, screen and (min-width: 769px) {
   .tech-item-container {
     flex-direction: row;
+    align-items: start;
   }
 }
 .tech-item-wrapper {
